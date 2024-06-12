@@ -7,14 +7,44 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin: 30px 0;
 }
 .slogan img {
   width: 400px;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about img {
+  width: 300px;
+}
+.about p {
+  width: 600px;
+  text-align: center;
+}
+
+.people {
+  display: flex;
+  margin: 30px 0;
+}
+.people section {
+  flex-basis: 30%;
+  text-align: center;
+  margin: 0 50px;
+}
+.people img {
+  width: 70px;
+  height: auto;
+  border-radius: 50%;
+}
+
 footer {
   display: flex;
   justify-content: center;
+  margin: 30px 0;
 }
 footer a {
   text-decoration: none;
