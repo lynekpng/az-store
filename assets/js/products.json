@@ -1,10 +1,20 @@
-// exemple
+
 [
     {
       "id": 1,
       "product": "Nike Air Max 270",
       "price": 140,
-      "image_url": "/assets/img/nike-air-max-279.jpeg"
-    }
-    // ...
+      "image_url": "/assets/img/shoe_one.png"
+    },
+    {
+      "id":2,
+      "product":"Nike Air Max 271",
+      "price":140,
+      "image_url":"/assets/img/shoe_two.png"
+  },
+  {   "id":3,
+      "produit":"",
+      "image_url":""
+}
   ]
+  
