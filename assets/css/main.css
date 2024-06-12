@@ -1,1 +1,12 @@
-/*# sourceMappingURL=main.css.map */
+main {
+  background-color: aqua;
+}
+
+.img_background {
+  height: 50px;
+  display: flex;
+}
+
+.mot_bleu {
+  color: blue;
+}/*# sourceMappingURL=main.css.map */
