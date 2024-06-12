@@ -16,5 +16,5 @@
       "produit":"",
       "image_url":""
 }
-  ]
-  
+];
+  let cart = {};

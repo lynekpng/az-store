@@ -25,10 +25,12 @@
             <img src="assets/img/shoe_two.png" alt="">
         </section>
     </main>
+    <section class="produits">
+        <script src="assets/js/produits.json"></script>
+    </section>
  
 </div>
 <footer>
-    <!-- Suppression de la section clients dupliquée -->
     <div>
         <img class="img_clients" src="assets/img/image-emily.jpg" alt="">
         <p><span class="clients_name">Emily from xyx</span><br>
