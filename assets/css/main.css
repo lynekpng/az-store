@@ -1,5 +1,10 @@
-* {
+body {
+  
   background-color: rgb(31, 34, 46);
+  background-image: url('/assets/img/NIKE2.png');
+  background-size: 40%; /* Ajuste la taille de l'image pour qu'elle soit contenue dans l'arrière-plan */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
+  background-position: right center; 
   color: #fff;
 }
 
@@ -11,7 +16,6 @@
 .slogan img {
   width: 400px;
 }
-
 .about {
   display: flex;
   flex-direction: column;
