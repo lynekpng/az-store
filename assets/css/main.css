@@ -28,6 +28,9 @@ body {
   width: 600px;
   text-align: center;
 }
+.un .mot_bleu {
+  color: blue;
+}
 
 .people {
   display: flex;
