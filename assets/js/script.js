@@ -1,6 +1,5 @@
 
-const jsonUrl = '../js/products.json';
-
+const jsonUrl = '../assets/js/products.json';
 
   fetch(jsonUrl)
     .then(response => {

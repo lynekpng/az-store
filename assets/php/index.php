@@ -15,10 +15,11 @@ include 'script.js';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Az Store</title>
     <link rel="stylesheet" href="../css/main.css">
-    <script src="../js/script.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
 </head>
 <body>
 <?php
+
 session_start(); 
 
 $servername = "localhost";
