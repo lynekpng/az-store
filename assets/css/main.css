@@ -1,41 +1,119 @@
 body {
-  background-color: #0F056B;
+  background-color: rgb(31, 34, 46);
+  background-image: url('/assets/img/NIKE2.png');
+  background-size: 60%; /* Ajuste la taille de l'image pour qu'elle soit contenue dans l'arrière-plan */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
+  background-position: top right; /* Positionne l'image en haut à droite */
+  color: #fff;
 }
 
-.container {
+
+.slogan {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-evenly;
 }
-
-.un .img_background {
-  height: 40%;
-  margin-left: 50%;
-  margin-right: 0;
+.slogan img {
+  width: 400px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about img {
+  width: 300px;
+}
+.about p {
+  width: 600px;
+  text-align: center;
 }
 .un .mot_bleu {
   color: blue;
 }
-.un .text {
-  flex: 1;
-}
 
-.clients {
+.people {
   display: flex;
-  justify-content: center;
+  margin: 30px 0;
+}
+.people section {
+  flex-basis: 30%;
+  text-align: center;
+  margin: 0 50px;
+}
+.people img {
+  width: 70px;
+  height: auto;
+  border-radius: 50%;
 }
 
-p {
+.card {
+  width: 200px;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.card img {
+  height: 105px;
+  width: 120px;
+  margin: 0 auto;
+  padding: 0 0px 20px 50px;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.shoesDisplay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.shoesDisplay button {
+  background-color: rgb(67, 101, 194);
   color: white;
+  padding: 10px;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.shoesDisplay button:hover {
+  background-color: rgb(45, 85, 160);
+}
+.shoesDisplay button:active {
+  transform: scale(0.9);
+  background-color: rgb(35, 75, 140);
+}
+.shoesDisplay h2 {
+  font-size: 15px;
+  margin: 0;
+  margin-top: 10px;
+}
+.shoesDisplay p {
+  margin: 0;
 }
 
 footer {
   display: flex;
+  justify-content: center;
+  margin: 30px 0;
 }
-footer .clients_name {
-  font-weight: bold;
+footer a {
+  text-decoration: none;
+  margin: 0 10px;
 }
-footer .img_clients {
-  border-radius: 50%;
+
+header {
   display: flex;
-  height: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  margin: 0 10px;
 }/*# sourceMappingURL=main.css.map */

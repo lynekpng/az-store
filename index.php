@@ -31,7 +31,7 @@
             </section>
             <div>
                 <p class="nike">Nike</p>
-                <img src="../img/shoe_one.png" alt="shoe one">
+                <img src="assets/img/shoe_one.png" alt="shoe one">
             </div>
         </div>
         <hr>
@@ -42,7 +42,7 @@
             
         </section>
         <section class="about">
-            <img src="../img/shoe_two.png" alt="shoe two">
+            <img src="assets/img/shoe_two.png" alt="shoe two">
             <h2>WE PROVIDE YOU <br> THE  <span class="mot_bleu">BEST </span>QUALITY.</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis accusantium, omnis deserunt sequi labore animi 
@@ -51,7 +51,7 @@
         </section>
         <div class="people">
             <section>
-                <img src="../img/image-emily.jpg" alt="image-emily">
+                <img src="assets/img/image-emily.jpg" alt="image-emily">
                 <h4>Emily from xyz</h4>
                 <p>
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, 
@@ -61,7 +61,7 @@
                 </p>
             </section>
             <section>
-                <img src="../img/image-thomas.jpg" alt="image-thomas">
+                <img src="assets/img/image-thomas.jpg" alt="image-thomas">
                 <h4>Thomas from corporate</h4>
                 <p>
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, 
@@ -71,7 +71,7 @@
                 </p>
             </section>
             <section>
-                <img src="../img/image-jennie.jpg" alt="image-jennie">
+                <img src="assets/img/image-jennie.jpg" alt="image-jennie">
                 <h4>Jennie from Nike</h4>
                 <p>
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, 
