@@ -29,6 +29,7 @@ body {
 .slogan img {
   width: 400px;
 }
+
 .about {
   display: flex;
   flex-direction: column;
@@ -40,9 +41,6 @@ body {
 .about p {
   width: 600px;
   text-align: center;
-}
-.un .mot_bleu {
-  color: blue;
 }
 
 .people {
@@ -58,6 +56,46 @@ body {
   width: 70px;
   height: auto;
   border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container input {
+  width: 380px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: #323a39;
+  margin: 5px 0;
+}
+.container input#city {
+  width: 176px;
+}
+.container input#zip-code {
+  width: 176px;
+}
+.container input:focus {
+  border: 0.25px solid rgb(45, 85, 160);
+}
+.container .submit-order {
+  padding: 15px 30px;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(67, 101, 194);
+}
+.container .submit-order:hover {
+  background-color: rgb(45, 85, 160);
 }
 
 .card {
