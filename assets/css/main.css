@@ -14,8 +14,9 @@ body {
   font-weight: 400;
   font-style: normal;
   position: absolute; /* Permet de positionner .content n'importe où */
-  top: -110px; /* Aligne le contenu en haut */
-  left: 150; /* Aligne le contenu à gauche */
+  top: -120px; /* Aligne le contenu en haut */
+  right: 120;
+  /* left: 120; Aligne le contenu à gauche */
   width: 100%; /* Assure que le contenu prend toute la largeur */
   z-index: -1; /* Place le contenu derrière l'image de fond */
   padding: 20px;
