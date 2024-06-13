@@ -10,6 +10,7 @@
 </style>
     <title>AZ-Store</title>
     <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/scriptCart.js" defer></script>
 </head>
 <body>
     <header>
