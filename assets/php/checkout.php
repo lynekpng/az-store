@@ -34,7 +34,7 @@
                             echo "<li>{$item['name']} - \${$item['price']}</li>";
                         }
                     } else {
-                        echo "<li>Your cart is empty.</li>";
+                        echo "<h4>Your cart is empty.</h4>";
                     }
                     ?>
                 </ul>

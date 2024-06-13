@@ -49,14 +49,14 @@
         outline: none;
         padding-left: 20px;
         font-weight: 500;
-        border-radius: 50px;
+        border-radius: 8px;
         background-color: #323a39;
         margin: 5px 0;
         &#city{
-            width: 173px;
+            width: 176px;
         }
         &#zip-code{
-            width: 173px;
+            width: 176px;
         }
         &:focus{
             border: 0.25px solid rgb(45, 85, 160);
@@ -69,7 +69,7 @@
         color: #fff;
         gap: 10px;
         border: none;
-        border-radius: 50px;
+        border-radius: 5px;
         cursor: pointer;
         background-color: rgb(67, 101, 194);
         &:hover{
