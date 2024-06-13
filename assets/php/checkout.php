@@ -24,9 +24,8 @@
     <hr>
     <main>
         <div class="container">
-            <h1>Checkout</h1>
             <div id="cart">
-                <h2>Shopping Cart</h2>
+                <h3>Shopping Cart</h3>
                 <ul id="cart-items">
                     <?php
                     session_start();
@@ -41,30 +40,21 @@
                 </ul>
             </div>
                 <div id="checkout-form">
-                    <h2>Shipping Information</h2>
+                    <h3>Shipping Information</h3>
                     <form action="checkout.php" method="post">
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name" required><br>
+                        <input type="text" id="full-name" name="full-name" placeholder="Full name" required><br>
                         
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name" required><br>
+                        <input type="email" id="email" name="email" placeholder="Your e-mail"  required><br>
                         
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required><br>
+                        <input type="text" id="address" name="address" placeholder="Adress" required><br>
                         
-                        <label for="address">Address</label>
-                        <input type="text" id="address" name="address" required><br>
+                        <input type="text" id="city" name="city" placeholder="City" required>
                         
-                        <label for="city">City</label>
-                        <input type="text" id="city" name="city" required>
+                        <input type="text" id="zip-code" name="zip-code" placeholder="Zip code" required><br>
+
+                        <input type="text" id="country" name="country" placeholder="Country" required><br>
                         
-                        <label for="zip-code">Zip Code</label>
-                        <input type="text" id="zip-code" name="zip-code" required><br>
-                        
-                        <label for="country">Country</label>
-                        <input type="text" id="country" name="country" required>
-                        
-                        <button type="submit" name="submit-order">Submit Order</button>
+                        <button class= "submit-order" type="submit" name="submit-order">Submit Order</button>
                     </form>
                 </div>
             
@@ -74,7 +64,7 @@
                 $_SESSION['cart'] = [];
 
                 echo '<div id="thank-you-message">';
-                echo '<h2>Thank you for your order!</h2>';
+                echo '<h3>Thank you for your order!</h3>';
                 echo '</div>';
             }
             ?>
