@@ -59,7 +59,7 @@
                         <input type="text" id="city" name="city" required>
                         
                         <label for="zip-code">Zip Code</label>
-                        <input type="text" id="zip-code" name="zip-code" required>
+                        <input type="text" id="zip-code" name="zip-code" required><br>
                         
                         <label for="country">Country</label>
                         <input type="text" id="country" name="country" required>

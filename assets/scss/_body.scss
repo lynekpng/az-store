@@ -38,22 +38,27 @@
 }
 
 .container{
-    background-color: aqua;
     width: 400px;
     justify-content: center;
     justify-self: center;
     input{
-        width: 400px;
+        width: 380px;
         height: 40px;
         border: none;
         outline: none;
         padding-left: 20px;
         font-weight: 500;
         border-radius: 50px;
-        background-color: #e7f3f2;
+        background-color: #323a39;
         margin: 5px 0;
+        &#city{
+            width: 128px;
+        }
+        &#zip-code{
+            width: 128px;
+        }
         &:focus{
-            border: 2px solid #0D8187;
+            border: 2px solid #dbebec;
         }
     }
 }

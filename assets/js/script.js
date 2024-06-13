@@ -1,5 +1,5 @@
 
-const jsonUrl = '../json/products.json';
+const jsonUrl = 'assets/json/products.json';
 
 fetch(jsonUrl)
   .then(response => {
@@ -16,7 +16,7 @@ fetch(jsonUrl)
 
 
       card.innerHTML = `
-            <img src="../img/shoe_one.png" alt="${product.product}">
+            <img src="assets/img/shoe_one.png" alt="${product.product}">
             <div class="shoesDisplay">
               <div class="rowShoes">
                 <h2>${product.product}</h2>

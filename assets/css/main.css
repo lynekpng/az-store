@@ -1,10 +1,5 @@
-body {
-  
+* {
   background-color: rgb(31, 34, 46);
-  background-image: url('/assets/img/NIKE2.png');
-  background-size: 40%; /* Ajuste la taille de l'image pour qu'elle soit contenue dans l'arrière-plan */
-  background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
-  background-position: right center; 
   color: #fff;
 }
 
@@ -16,6 +11,7 @@ body {
 .slogan img {
   width: 400px;
 }
+
 .about {
   display: flex;
   flex-direction: column;
@@ -27,9 +23,6 @@ body {
 .about p {
   width: 600px;
   text-align: center;
-}
-.un .mot_bleu {
-  color: blue;
 }
 
 .people {
@@ -48,24 +41,29 @@ body {
 }
 
 .container {
-  background-color: aqua;
   width: 400px;
   justify-content: center;
   justify-self: center;
 }
 .container input {
-  width: 400px;
+  width: 380px;
   height: 40px;
   border: none;
   outline: none;
   padding-left: 20px;
   font-weight: 500;
   border-radius: 50px;
-  background-color: #e7f3f2;
+  background-color: #323a39;
   margin: 5px 0;
 }
+.container input#city {
+  width: 128px;
+}
+.container input#zip-code {
+  width: 128px;
+}
 .container input:focus {
-  border: 2px solid #0D8187;
+  border: 2px solid #dbebec;
 }
 
 .card {
