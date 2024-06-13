@@ -1,4 +1,3 @@
-
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 document.addEventListener("DOMContentLoaded", () => {
   updateCart();
@@ -41,7 +40,7 @@ function decreaseQuantity(id) {
     localStorage.setItem("cart", JSON.stringify(cart));
     updateCart();
   } else if (product) {
-    removeItem(id) ;
+    removeItem(id);
   }
 }
 
@@ -53,7 +52,7 @@ function removeItem(id) {
 
 function getTotal() {
   let totalItem = 0,
-   cartTotal = 0;
+    cartTotal = 0;
   cart.forEach((cartItem) => {
     cartTotal += cartItem.price * cartItem.quantity;
     totalItem += cartItem.quantity;
