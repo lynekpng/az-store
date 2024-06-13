@@ -36,3 +36,24 @@
         border-radius: 50%;
     }
 }
+
+.container{
+    background-color: aqua;
+    width: 400px;
+    justify-content: center;
+    justify-self: center;
+    input{
+        width: 400px;
+        height: 40px;
+        border: none;
+        outline: none;
+        padding-left: 20px;
+        font-weight: 500;
+        border-radius: 50px;
+        background-color: #e7f3f2;
+        margin: 5px 0;
+        &:focus{
+            border: 2px solid #0D8187;
+        }
+    }
+}
