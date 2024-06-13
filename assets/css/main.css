@@ -1,5 +1,10 @@
-* {
+body {
+  
   background-color: rgb(31, 34, 46);
+  background-image: url('/assets/img/NIKE2.png');
+  background-size: 40%; /* Ajuste la taille de l'image pour qu'elle soit contenue dans l'arrière-plan */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
+  background-position: right center; 
   color: #fff;
 }
 
@@ -7,12 +12,10 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 30px 0;
 }
 .slogan img {
   width: 400px;
 }
-
 .about {
   display: flex;
   flex-direction: column;
@@ -24,6 +27,9 @@
 .about p {
   width: 600px;
   text-align: center;
+}
+.un .mot_bleu {
+  color: blue;
 }
 
 .people {
@@ -39,6 +45,57 @@
   width: 70px;
   height: auto;
   border-radius: 50%;
+}
+
+.card {
+  width: 200px;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.card img {
+  height: 105px;
+  width: 120px;
+  margin: 0 auto;
+  padding: 0 0px 20px 50px;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.shoesDisplay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.shoesDisplay button {
+  background-color: rgb(67, 101, 194);
+  color: white;
+  padding: 10px;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.shoesDisplay button:hover {
+  background-color: rgb(45, 85, 160);
+}
+.shoesDisplay button:active {
+  transform: scale(0.9);
+  background-color: rgb(35, 75, 140);
+}
+.shoesDisplay h2 {
+  font-size: 15px;
+  margin: 0;
+  margin-top: 10px;
+}
+.shoesDisplay p {
+  margin: 0;
 }
 
 footer {

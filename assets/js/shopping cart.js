@@ -1,121 +1,69 @@
-// const cart = document.getElementbyClassName("fa-solid fa-cart-shopping") ;
-// cart.addEventListener('click', openCart() )
+let cart = [];
 
-// function openCart() {
-//     const body = document.querySelectorAll("body") ;
-//     const modalSection = document.createElement("section");
-//     const modalDiv = document.createElement("div");
-//     const closeDiv = document.createElement("div");
+document.addEventListener("DOMContentLoaded", () => {
+  cart = JSON.parse(localStorage.getItem("cart")) || [];
+  updateCart();
+});
 
-
-// };
-
-const products = [
-    { name: "Adidas Shoes", price: 2500, id: 1, quantity: 1,},
-    { name: "Sting Energy Drink", price: 120, id: 2, quantity: 1,},
-    { name: "Umbrella", price: 500, id: 3, quantity: 1, },
-    { name: "Cat Food", price: 900, id: 4, quantity: 1, },
-    { name: "T Shirt", price: 300, id: 5, quantity: 1, },
-    { name: "Book", price: 100, id: 6, quantity: 1,},
-  ];
-  // récupérer les articles du JSON 
-  
-  let cart = []
-  
-  const productsHTML = products.map(
-    (product) => `<div class="product-card">
-          <h2 class="product-name">${product.name}</h2>
-          <strong>$${product.price}</strong>
-          <button class="product-btn" id=${product.id}>Add to Cart</button>
-      </div>`
+function updateCart() {
+  const cartHTML = cart.map(
+    (item) => `<div class="cart-item">
+                    <h3>${item.product}</h3>
+                    <div class="cart-detail">
+                        <div class="mid">
+                            <button onclick="decrItem(${item.id})">-</button>
+                            <p>${item.quantity}</p>
+                            <button onclick="incrItem(${item.id})">+</button>
+                        </div>
+                        <p>$${item.price}</p>
+                        <button onclick="deleteItem(${item.id})" class="cart-product" id=${item.id}>D</button>
+                    </div>
+                </div>`
   );
-  const result = document.querySelector(".result");
-  result.innerHTML = productsHTML.join("");
-  
-  
-  function updateCart() {
-    const cartHTML = cart.map(
-      (item) => `<div class="cart-item">
-              <h3>${item.name}</h3>
-              <div class="cart-detail"><div class="mid">
-                  <button onclick={decrItem(${item.id})}>-</button>
-                  <p>${item.quantity}</p>
-                  <button onclick={incrItem(${item.id})}>+</button>
-              </div>
-              <p>$${item.price}</p>
-              <button onclick={deleteItem(${item.id})} class="cart-product" id=${item.id}>D</button></div>
-             </div>`
-    );
-  
-    const cartItems = document.querySelector(".cart-items");
-    cartItems.innerHTML = cartHTML.join("");
+
+  const cartItems = document.querySelector(".cart-items");
+  cartItems.innerHTML = cartHTML.join("");
+  getTotal();
+}
+
+function addToCart(id) {
+  const product = cart.find((item) => item.id === id);
+  if (product) {
+    product.quantity += 1;
+  } else {
+    cart.push({ ...product, quantity: 1 });
   }
-  
-  let num = document.querySelectorAll(".product-btn").length;
-  for (let i = 0; i < num; i++) {
-    document
-      .querySelectorAll(".product-btn")
-    [i].addEventListener("click", function (e) {
-      addToCart(products, parseInt(e.target.id));
-    });
-  }
-  
-  function addToCart(products, id){
-    const product = products.find((product) => product.id === id);
-    const cartProduct = cart.find((product) => product.id === id);
-    if (cartProduct != undefined && product.id == cartProduct.id) {
-      incrItem(id);
-    } else {
-      cart.unshift(product);
-    }
-    updateCart();
-    getTotal(cart);
-  };
-  
-  function getTotal(cart) {
-    let { totalItem, cartTotal } = cart.reduce(
-      (total, cartItem) => {
-        total.cartTotal += cartItem.price * cartItem.quantity;
-        total.totalItem += cartItem.quantity;
-        return total;
-      },
-      { totalItem: 0, cartTotal: 0 }
-    );
-    const totalItemsHTML = document.querySelector(".noOfItems");
-    totalItemsHTML.innerHTML = `${totalItem} items`;
-    const totalAmountHTML = document.querySelector(".total");
-    totalAmountHTML.innerHTML = `$${cartTotal}`;
-  }
-  
-  function incrItem(id) {
-    for (let i = 0; i < cart.length; i++) {
-      if (cart[i] && cart[i].id == id) {
-        cart[i].quantity += 1;
-      }
-    }
-    updateCart();
-    getTotal(cart);
-  }
-  
-  function decrItem(id) {
-    for (let i = 0; i < cart.length; i++) {
-      if (cart[i].id == id && cart[i].quantity > 1) {
-        cart[i].quantity -= 1;
-      }
-    }
-    updateCart();
-    getTotal(cart);
-  }
-  
-  function deleteItem(id) {
-    for (let i = 0; i < cart.length; i++) {
-      if (cart[i].id === id) {
-        cart[i].quantity = 1;
-        cart.splice(i, 1);
-      }
-    }
-    updateCart();
-    getTotal(cart);
-  }
-  
-  
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCart();
+}
+
+function incrItem(id) {
+  const product = cart.find((item) => item.id === id);
+  if (product) product.quantity += 1;
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCart();
+}
+
+function decrItem(id) {
+  const product = cart.find((item) => item.id === id);
+  if (product && product.quantity > 1) product.quantity -= 1;
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCart();
+}
+
+function deleteItem(id) {
+  cart = cart.filter((item) => item.id !== id);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCart();
+}
+
+function getTotal() {
+  let totalItem = 0,
+    cartTotal = 0;
+  cart.forEach((cartItem) => {
+    cartTotal += cartItem.price * cartItem.quantity;
+    totalItem += cartItem.quantity;
+  });
+  document.querySelector(".noOfItems").innerHTML = `${totalItem} items`;
+  document.querySelector(".total").innerHTML = `$${cartTotal}`;
+}
