@@ -1,0 +1,41 @@
+body {
+  background-color: #0F056B;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.un .img_background {
+  height: 40%;
+  margin-left: 50%;
+  margin-right: 0;
+}
+.un .mot_bleu {
+  color: blue;
+}
+.un .text {
+  flex: 1;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  color: white;
+}
+
+footer {
+  display: flex;
+}
+footer .clients_name {
+  font-weight: bold;
+}
+footer .img_clients {
+  border-radius: 50%;
+  display: flex;
+  height: 50%;
+}/*# sourceMappingURL=main2.css.map */

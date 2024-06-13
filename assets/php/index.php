@@ -28,9 +28,9 @@ $password = "";
 $dbname = "az_store";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Vérifie si le panier est défini en session
+  
     if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
-        // Connexion à la base de données
+
         $conn = new mysqli($servername, $username, $password, $dbname);
         if ($conn->connect_error) {
             die("La connexion a échoué: " . $conn->connect_error);
@@ -41,10 +41,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $product_name = $product['product'];
             $quantity = $product['quantity'];
             $customer_name = $product['customer_name'];
-            // Ajoute le prix si disponible dans ton panier
-            // $price = $product['price'];
+            $price = $product['price'];
 
-            // Génère un numéro de commande unique pour chaque produit/commande
             $order_number = uniqid();
 
             $sql = "INSERT INTO commandes (order_number, product, quantity, customer_name) 
@@ -52,17 +50,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if ($conn->query($sql) === TRUE) {
                 echo "Nouvelle commande enregistrée avec succès<br>";
+                header("Location: confirmation.php");
+                exit;
             } else {
                 echo "Erreur: " . $sql . "<br>" . $conn->error . "<br>";
             }
         }
         $conn->close();
-        
+
         unset($_SESSION['cart']);
     } else {
         echo "Le panier est vide";
     }
 }
+    */
 ?>
 
 

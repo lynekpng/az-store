@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Jacquard+24&family=Oswald:wght@200..700&family=Pixelify+Sans:wght@400..700&display=swap');
+</style>
     <title>AZ-Store</title>
     <script src="assets/js/script.js" defer></script>
 </head>
@@ -18,7 +21,7 @@
             <a href="#contact">Contact</a>
         </nav>
         <div>
-            <a href="/assets/php/shopping-cart.php"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+            <a href=""><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
             <a href="#login">Login</a>
         </div>
     </header>
@@ -31,7 +34,7 @@
             </section>
             <div>
                 <p class="nike">Nike</p>
-                <img src="../img/shoe_one.png" alt="shoe one">
+                <img src="assets/img/shoe_one.png" alt="shoe one">
             </div>
         </div>
         <hr>
@@ -42,7 +45,7 @@
             
         </section>
         <section class="about">
-            <img src="../img/shoe_two.png" alt="shoe two">
+            <img src="assets/img/shoe_two.png" alt="shoe two">
             <h2>WE PROVIDE YOU <br> THE  <span class="mot_bleu">BEST </span>QUALITY.</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis accusantium, omnis deserunt sequi labore animi 
@@ -51,7 +54,7 @@
         </section>
         <div class="people">
             <section>
-                <img src="../img/image-emily.jpg" alt="image-emily">
+                <img src="assets/img/image-emily.jpg" alt="image-emily">
                 <h4>Emily from xyz</h4>
                 <p>
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, 
@@ -61,7 +64,7 @@
                 </p>
             </section>
             <section>
-                <img src="../img/image-thomas.jpg" alt="image-thomas">
+                <img src="assets/img/image-thomas.jpg" alt="image-thomas">
                 <h4>Thomas from corporate</h4>
                 <p>
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, 
@@ -71,7 +74,7 @@
                 </p>
             </section>
             <section>
-                <img src="../img/image-jennie.jpg" alt="image-jennie">
+                <img src="assets/img/image-jennie.jpg" alt="image-jennie">
                 <h4>Jennie from Nike</h4>
                 <p>
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, 
@@ -82,18 +85,6 @@
             </section>
         </div>
     </main>
-
-
-    <form action="index.php" method="POST">
-        <label for="product">Produit:</label>
-        <input type="text" id="product" name="product" required><br><br>
-        <label for="quantity">Quantité:</label>
-        <input type="number" id="quantity" name="quantity" required><br><br>
-        <label for="customer_name">Nom du client:</label>
-        <input type="text" id="customer_name" name="customer_name" required><br><br>
-        <input type="submit" value="Passer commande">
-    </form>
-
     <hr>
     <footer>
         <a href="#home">Home</a>
