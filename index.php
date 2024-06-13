@@ -1,54 +1,93 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Az Store</title>
-    <!-- Correction du lien de feuille de style mal placé -->
-    <link rel="stylesheet" href="assets/css/main2.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>AZ-Store</title>
+    <script src="assets/js/script.js" defer></script>
 </head>
 <body>
-<div class="container">
+    <header>
+        <h3>AZ[store]</h3>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#product">Product</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div>
+            <a href=""><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+            <a href="#login">Login</a>
+        </div>
+    </header>
+    <hr>
     <main>
-        <section class="un">
+        <div class="slogan">
+            <section>
+                <h2>SHOE THE <br>RIGHT <span class="mot_bleu"> ONE </span>.</h2>
+                <button>See our store</button>
+            </section>
             <div>
-                <img src="assets/img/shoe_one.png" alt="" class="img_background">
-                <div class="text">
-                    <p>SHOE THE RIGHT <span class="mot_bleu">ONE</span></p>
-                    <button>See our store</button>
-                </div>
+                <p class="nike">Nike</p>
+                <img src="../img/shoe_one.png" alt="shoe one">
             </div>
+        </div>
+        <hr>
+        <section class="products">
+            <h3>Our last products</h3>
         </section>
-        <section>
-            <p class="paragraphe">WE PROVIDE YOU THE <span class="mot_bleu">BEST</span> QUALITE</p>
-            <img src="assets/img/shoe_two.png" alt="">
+        <section class="articles">
+            
         </section>
+        <section class="about">
+            <img src="../img/shoe_two.png" alt="shoe two">
+            <h2>WE PROVIDE YOU <br> THE  <span class="mot_bleu">BEST </span>QUALITY.</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis accusantium, omnis deserunt sequi labore animi 
+                saepe recusandae,
+            </p>
+        </section>
+        <div class="people">
+            <section>
+                <img src="../img/image-emily.jpg" alt="image-emily">
+                <h4>Emily from xyz</h4>
+                <p>
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, 
+                    reprehenderit hic. Minima ratione, sunt veniam ea ullam, perferendis 
+                    quia eius minus esse animi officiis assumenda nobis, explicabo consectetur 
+                    molestiae praesentium?"
+                </p>
+            </section>
+            <section>
+                <img src="../img/image-thomas.jpg" alt="image-thomas">
+                <h4>Thomas from corporate</h4>
+                <p>
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, 
+                    reprehenderit hic. Minima ratione, sunt veniam ea ullam, perferendis 
+                    quia eius minus esse animi officiis assumenda nobis, explicabo consectetur 
+                    molestiae praesentium?"
+                </p>
+            </section>
+            <section>
+                <img src="../img/image-jennie.jpg" alt="image-jennie">
+                <h4>Jennie from Nike</h4>
+                <p>
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, 
+                    reprehenderit hic. Minima ratione, sunt veniam ea ullam, perferendis 
+                    quia eius minus esse animi officiis assumenda nobis, explicabo consectetur 
+                    molestiae praesentium?"
+                </p>
+            </section>
+        </div>
     </main>
-    <section class="produits">
-        <script src="assets/js/produits.json"></script>
-    </section>
- 
-</div>
-<footer>
-    <div>
-        <img class="img_clients" src="assets/img/image-emily.jpg" alt="">
-        <p><span class="clients_name">Emily from xyx</span><br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum est enim laudantium consectetur corporis quasi saepe, expedita ullam doloremque, quis non! Eveniet alias porro, quisquam voluptatem voluptatum eum atque mollitia.
-        </p>
-    </div>
-    <div>
-        <img class="img_clients" src="assets/img/image-jennie.jpg" alt="">
-        <p><span class="clients_name">Jennie from corporate</span><br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum est enim laudantium consectetur corporis quasi saepe, expedita ullam doloremque, quis non! Eveniet alias porro, quisquam voluptatem voluptatum eum atque mollitia.
-        </p>
-    </div>
-    <div>
-        <img class="img_clients" src="assets/img/image-thomas.jpg" alt="">
-        <p><span class="clients_name">Thomas from Nike</span><br>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci sed nemo error minus ipsum! Dolores animi nulla tempora expedita quisquam vitae. Reprehenderit eos ratione fugit repellat vel fugiat quia sequi.
-        </p>
-    </div>
-</footer>
+    <hr>
+    <footer>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#product">Product</a>
+        <a href="#contact">Contact</a>
+    </footer>
 </body>
 </html>
