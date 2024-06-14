@@ -42,17 +42,11 @@ function addToCart(id, product, price) {
 }
 
 
-
-
-// Sélection du formulaire
 const checkoutForm = document.querySelector('form');
 
-// Ajout d'un écouteur d'événement pour la soumission du formulaire
 checkoutForm.addEventListener('submit', function (event) {
-  // Empêcher la soumission par défaut du formulaire
   event.preventDefault();
 
-  // Fonction pour afficher la notification toast
   function showToast() {
     let audio = new Audio('../sound/pop-39222.mp3');
     audio.play();
