@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/css/main.css">
     <title>AZ-Store</title>
-    <script defer src="assets/js/script.js" ></script>
+    <script defer src="/assets/js/script.js" ></script>
 </head>
 <body>
     <header>
@@ -31,7 +31,7 @@
             </section>
             <div>
                 <p class="nike">Nike</p>
-                <img src="assets/img/shoe_one.png" alt="shoe one">
+                <img src="../img/shoe_one.png" alt="shoe one">
             </div>
         </div>
         <hr>
@@ -42,7 +42,7 @@
             
         </section>
         <section class="about">
-            <img src="assets/img/shoe_two.png" alt="shoe two">
+            <img src="../img/shoe_two.png" alt="shoe two">
             <h2>WE PROVIDE YOU <br> THE  <span class="mot_bleu">BEST </span>QUALITY.</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis accusantium, omnis deserunt sequi labore animi 
@@ -51,7 +51,7 @@
         </section>
         <div class="people">
             <section>
-                <img src="assets/img/image-emily.jpg" alt="image-emily">
+                <img src="../img/image-emily.jpg" alt="image-emily">
                 <h4>Emily from xyz</h4>
                 <p>
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, 
@@ -61,7 +61,7 @@
                 </p>
             </section>
             <section>
-                <img src="assets/img/image-thomas.jpg" alt="image-thomas">
+                <img src="../img/image-thomas.jpg" alt="image-thomas">
                 <h4>Thomas from corporate</h4>
                 <p>
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, 
@@ -71,7 +71,7 @@
                 </p>
             </section>
             <section>
-                <img src="assets/img/image-jennie.jpg" alt="image-jennie">
+                <img src="../img/image-jennie.jpg" alt="image-jennie">
                 <h4>Jennie from Nike</h4>
                 <p>
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, 
