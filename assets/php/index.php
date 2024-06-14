@@ -27,7 +27,7 @@
         <div class="banner">
             <section class="slogan">
                 <h2>SHOE THE <br>RIGHT <span class="mot_bleu"> ONE</span>.</h2>
-                <button id="store-button">See our store</button>
+                <button class="store-button">See our store</button>
             </section>
             <div>
                 <p class="nike">Nike</p>

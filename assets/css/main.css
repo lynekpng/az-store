@@ -6,7 +6,7 @@ body {
   font-family: "montserrat", sans-serif;
 
 }
-#store-button {
+.store-button {
   background: linear-gradient(to right, #397DEE 0%, #1f3d8f 100%);
   border: none;
   color: white;
@@ -121,7 +121,7 @@ z-index: -1;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: rgb(67, 101, 194);
+  background: linear-gradient(to right, #397DEE 0%, #1f3d8f 100%);
 }
 .container .submit-order:hover {
   background-color: rgb(45, 85, 160);

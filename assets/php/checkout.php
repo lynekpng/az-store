@@ -21,7 +21,7 @@
             <a href="#login">Login</a>
         </div>
     </header>
-    <hr>
+    <hr class="horizontal-lign">
     <main>
         <div class="container">
             <div id="cart">
@@ -70,7 +70,8 @@
             ?>
         </div>
     </main>
-    <hr>
+    <hr class="horizontal-lign">
+    <script src="../js/script.js"></script>
     <footer>
         <a href="index.php#home">Home</a>
         <a href="index.php#about">About</a>
