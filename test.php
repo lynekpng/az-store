@@ -1,20 +1,3 @@
-<!-- debutAjout de fonction pour garder la session active ainsi que le contenu du panier -->
-<?php // Démarre ou restaure une session
-session_start();
-
-// Ajouter un article au panier
-$_SESSION['panier'][] = $article;
-
-// Pour afficher le panier
-if (isset($_SESSION['panier'])) {
-    foreach ($_SESSION['panier'] as $article) {
-        // Afficher les détails de l'article
-    }
-}
-?>
-<!-- fin Ajout de fonction pour garder la session active ainsi que le contenu du panier -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,8 +6,8 @@ if (isset($_SESSION['panier'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Jacquard+24&family=Oswald:wght@200..700&family=Pixelify+Sans:wght@400..700&display=swap');
-</style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Jacquard+24&family=Oswald:wght@200..700&family=Pixelify+Sans:wght@400..700&display=swap');
+    </style>
     <title>AZ-Store</title>
     <script src="assets/js/script.js" defer></script>
     <script src="assets/js/scriptCart.js" defer></script>
@@ -60,7 +43,25 @@ if (isset($_SESSION['panier'])) {
             <h3>Our last products</h3>
         </section>
         <section class="articles">
-            
+            <!-- Inclure le fichier shopping_cart.php -->
+            <?php include 'shopping_cart.php'; ?>
+
+            <!-- Formulaire pour ajouter un élément au panier -->
+            <form method="post" action="">
+                <label for="item">Ajouter un élément :</label>
+                <input type="text" name="item" id="item" required>
+                <button type="submit">Ajouter</button>
+            </form>
+
+            <!-- Formulaire pour supprimer un élément du panier -->
+            <form method="post" action="">
+                <label for="remove_item">Supprimer un élément :</label>
+                <input type="text" name="remove_item" id="remove_item" required>
+                <button type="submit">Supprimer</button>
+            </form>
+
+            <h2>Contenu actuel du panier :</h2>
+            <?php displayCart(); ?>
         </section>
         <section class="about">
             <img src="assets/img/shoe_two.png" alt="shoe two">

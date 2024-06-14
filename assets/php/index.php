@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         unset($_SESSION['cart']);
     } else {
         echo "Le panier est vide";
-    }
+     }
 }
     */
 ?>
