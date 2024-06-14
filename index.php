@@ -22,16 +22,15 @@
             <a href="#product">Product</a>
             <a href="#contact">Contact</a>
             <button id="toggleBtn">
-    <i class="fas fa-sun"></i> <!-- Utilisation de l'icône de soleil -->
-    <i class="fas fa-moon"></i> <!-- Utilisation de l'icône de lune -->
+                <i class="fas fa-sun"></i> <!-- Utilisation de l'icône de soleil -->
+                <i class="fas fa-moon"></i> <!-- Utilisation de l'icône de lune -->
 </button>
 
-        </nav>
+        </nav> 
         <div>
             <a href=""><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
             <a href="#login">Login</a>
         </div>
-        <div> <button id="toggleBtn"> dark </button></div>
     </header>
     <hr>
     <main>
