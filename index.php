@@ -1,19 +1,3 @@
-<!-- debutAjout de fonction pour garder la session active ainsi que le contenu du panier -->
-<?php // Démarre ou restaure une session
-session_start();
-
-// Ajouter un article au panier
-$_SESSION['panier'][] = $article;
-
-// Pour afficher le panier
-if (isset($_SESSION['panier'])) {
-    foreach ($_SESSION['panier'] as $article) {
-        // Afficher les détails de l'article
-    }
-}
-?>
-<!-- fin Ajout de fonction pour garder la session active ainsi que le contenu du panier -->
-
 
 <!DOCTYPE html>
 <html lang="en">
