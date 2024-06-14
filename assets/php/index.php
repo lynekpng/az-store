@@ -26,21 +26,21 @@
             <a href="#login">Login</a>
         </div>
     </header>
-    <hr>
+    <hr class ="horizontal-lign">
     <main>
-        <div class="slogan">
-            <section>
-                <h2>SHOE THE <br>RIGHT <span class="mot_bleu"> ONE </span>.</h2>
-                <button>See our store</button>
+        <div class="banner">
+            <section class="slogan">
+                <h2>SHOE THE <br>RIGHT <span class="mot_bleu"> ONE</span>.</h2>
+                <button id="store-button">See our store</button>
             </section>
             <div>
                 <p class="nike">Nike</p>
                 <img src="../img/shoe_one.png" alt="shoe one">
             </div>
         </div>
-        <hr>
+        <hr class= "horizontal-lign">
         <section class="products">
-            <h3>Our last products</h3>
+            <h3><span class="mot_bleu"> Our </span> last products</h3>
         </section>
         <section class="articles">
 
@@ -58,36 +58,36 @@
             <section>
                 <img src="../img/image-emily.jpg" alt="image-emily">
                 <h4>Emily from xyz</h4>
-                <p>
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
-                    reprehenderit hic. Minima ratione, sunt veniam ea ullam, perferendis
-                    quia eius minus esse animi officiis assumenda nobis, explicabo consectetur
+                <p class="testimonies">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, 
+                    reprehenderit hic. Minima ratione, sunt veniam ea ullam, perferendis 
+                    quia eius minus esse animi officiis assumenda nobis, explicabo consectetur 
                     molestiae praesentium?"
                 </p>
             </section>
             <section>
                 <img src="../img/image-thomas.jpg" alt="image-thomas">
                 <h4>Thomas from corporate</h4>
-                <p>
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
-                    reprehenderit hic. Minima ratione, sunt veniam ea ullam, perferendis
-                    quia eius minus esse animi officiis assumenda nobis, explicabo consectetur
+                <p class="testimonies">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, 
+                    reprehenderit hic. Minima ratione, sunt veniam ea ullam, perferendis 
+                    quia eius minus esse animi officiis assumenda nobis, explicabo consectetur 
                     molestiae praesentium?"
                 </p>
             </section>
             <section>
                 <img src="../img/image-jennie.jpg" alt="image-jennie">
                 <h4>Jennie from Nike</h4>
-                <p>
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
-                    reprehenderit hic. Minima ratione, sunt veniam ea ullam, perferendis
-                    quia eius minus esse animi officiis assumenda nobis, explicabo consectetur
+                <p class="testimonies">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, 
+                    reprehenderit hic. Minima ratione, sunt veniam ea ullam, perferendis 
+                    quia eius minus esse animi officiis assumenda nobis, explicabo consectetur 
                     molestiae praesentium?"
                 </p>
             </section>
         </div>
     </main>
-    <hr>
+    <hr class = "horizontal-lign">
     <footer>
         <a href="#home">Home</a>
         <a href="#about">About</a>

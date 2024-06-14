@@ -1,15 +1,61 @@
-* {
-  background-color: rgb(31, 34, 46);
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  background: linear-gradient( #151e30,#111827, #000);
   color: #fff;
+  font-family: "montserrat", sans-serif;
+
+}
+#store-button {
+  background: linear-gradient(to right, #397DEE 0%, #1f3d8f 100%);
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 5%;
 }
 
-.slogan {
+main {
+margin-top: 50px;
+}
+.testimonies {
+font-weight: 200;
+}
+.mot_bleu {
+color: #2563eb;
+}
+
+.horizontal-lign {
+opacity: 10%;
+border-style: #4a4a4a;
+z-index: -1;
+}
+
+.nike{
+  font-family: "Bungee Outline", sans-serif;
+  color: grey;
+  opacity: 20%;
+  font-size: 230px;
+  font-weight: 200;
+  font-style: normal;
+  position: absolute; 
+  top: -120px; 
+  right: 120;
+  z-index: -1; 
+  padding: 20px;
+}
+.card {
+  box-shadow: 0px 0px 50px 50px rgba(0,0,0,0.15);
+}
+.products
+.banner {
+  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-left: -200px;
 }
-.slogan img {
-  width: 400px;
+.banner img {
+  width: 500px;
 }
 
 .about {
@@ -19,6 +65,7 @@
 }
 .about img {
   width: 300px;
+  margin-top: 50px;
 }
 .about p {
   width: 600px;
@@ -81,15 +128,15 @@
 }
 
 .card {
-  width: 200px;
+  width: 300px;
   margin: 10px;
   border-radius: 5px;
   padding: 10px;
   box-sizing: border-box;
 }
 .card img {
-  height: 105px;
-  width: 120px;
+height: 200px;
+width: 200px;
   margin: 0 auto;
   padding: 0 0px 20px 50px;
 }
@@ -168,6 +215,7 @@ footer a {
 }
 
 header {
+  font-weight: 600;
   display: flex;
   justify-content: space-around;
   align-items: center;
