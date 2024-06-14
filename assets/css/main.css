@@ -6,14 +6,21 @@ body {
   font-family: "montserrat", sans-serif;
 
 }
-#store-button {
+.store-button {
   background: linear-gradient(to right, #397DEE 0%, #1f3d8f 100%);
   border: none;
   color: white;
   padding: 15px;
   border-radius: 5%;
 }
-
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.slogan img {
+  width: 500px;
+}
 main {
 margin-top: 50px;
 }
@@ -46,7 +53,7 @@ z-index: -1;
 .card {
   box-shadow: 0px 0px 50px 50px rgba(0,0,0,0.15);
 }
-.products
+
 .banner {
   font-size: 40px;
   display: flex;
@@ -121,7 +128,7 @@ z-index: -1;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: rgb(67, 101, 194);
+  background: linear-gradient(to right, #397DEE 0%, #1f3d8f 100%);
 }
 .container .submit-order:hover {
   background-color: rgb(45, 85, 160);

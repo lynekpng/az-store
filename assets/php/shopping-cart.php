@@ -36,7 +36,9 @@
                 <h4>Total</h4>
                 <p class="total">$0</p>
             </div>
+            <button class="store-button">
             <a href="checkout.php">PROCEED TO CHECKOUT</a>
+            </button>
         </div>
     </div>
 
