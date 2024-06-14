@@ -1,1 +1,152 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  background-color: rgb(31, 34, 46);
+  color: #fff;
+}
+
+.slogan {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.slogan img {
+  width: 400px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about img {
+  width: 300px;
+}
+.about p {
+  width: 600px;
+  text-align: center;
+}
+
+.people {
+  display: flex;
+  margin: 30px 0;
+}
+.people section {
+  flex-basis: 30%;
+  text-align: center;
+  margin: 0 50px;
+}
+.people img {
+  width: 70px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container input {
+  width: 380px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: #323a39;
+  margin: 5px 0;
+}
+.container input#city {
+  width: 176px;
+}
+.container input#zip-code {
+  width: 176px;
+}
+.container input:focus {
+  border: 0.25px solid rgb(45, 85, 160);
+}
+.container .submit-order {
+  padding: 15px 30px;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(67, 101, 194);
+}
+.container .submit-order:hover {
+  background-color: rgb(45, 85, 160);
+}
+
+.card {
+  width: 200px;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.card img {
+  height: 105px;
+  width: 120px;
+  margin: 0 auto;
+  padding: 0 0px 20px 50px;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.shoesDisplay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.shoesDisplay button {
+  background-color: rgb(67, 101, 194);
+  color: white;
+  padding: 10px;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.shoesDisplay button:hover {
+  background-color: rgb(45, 85, 160);
+}
+.shoesDisplay button:active {
+  transform: scale(0.9);
+  background-color: rgb(35, 75, 140);
+}
+.shoesDisplay h2 {
+  font-size: 15px;
+  margin: 0;
+  margin-top: 10px;
+}
+.shoesDisplay p {
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+footer a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  margin: 0 10px;
+}/*# sourceMappingURL=main.css.map */

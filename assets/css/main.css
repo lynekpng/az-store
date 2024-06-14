@@ -1,31 +1,74 @@
+/* main.css */
+
+/* Styles pour le mode clair (par défaut) */
 body {
-  background-color: rgb(31, 34, 46);
-  /* background-image: url('/assets/img/NIKE2.png');
-  background-size: 60%; /* Ajuste la taille de l'image pour qu'elle soit contenue dans l'arrière-plan */
-  /* background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
-  /* background-position: top right;   */
-  color: #fff;
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.5s, color 0.5s;
 }
 
+header, main, footer {
+  padding: 20px;
+  text-align: center;
+}
 
-.nike{
+/* Styles pour le bouton */
+nav button#toggleBtn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 10px; /* Ajoute un espace entre les liens et le bouton */
+}
+
+/* Styles pour le mode sombre */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode nav a,
+.dark-mode footer a {
+  color: #e0e0e0;
+}
+
+.dark-mode .fa-cart-shopping {
+  color: #e0e0e0;
+}
+
+.dark-mode .mot_bleu {
+  color: #03a9f4;
+}
+
+.dark-mode button#toggleBtn {
+  background-color: #03a9f4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Autres styles */
+.nike {
   font-family: "Bungee Outline", sans-serif;
   font-size: 200px;
   font-weight: 400;
   font-style: normal;
-  position: absolute; /* Permet de positionner .content n'importe où */
-  top: -120px; /* Aligne le contenu en haut */
+  position: absolute;
+  top: -120px;
   right: 120;
-  /* left: 120; Aligne le contenu à gauche */
-  width: 100%; /* Assure que le contenu prend toute la largeur */
-  z-index: -1; /* Place le contenu derrière l'image de fond */
+  width: 100%;
+  z-index: -1;
   padding: 20px;
 }
+
 .slogan {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
+
 .slogan img {
   width: 400px;
 }
@@ -35,9 +78,11 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .about img {
   width: 300px;
 }
+
 .about p {
   width: 600px;
   text-align: center;
@@ -47,11 +92,13 @@ body {
   display: flex;
   margin: 30px 0;
 }
+
 .people section {
   flex-basis: 30%;
   text-align: center;
   margin: 0 50px;
 }
+
 .people img {
   width: 70px;
   height: auto;
@@ -63,6 +110,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .container input {
   width: 380px;
   height: 40px;
@@ -74,15 +122,19 @@ body {
   background-color: #323a39;
   margin: 5px 0;
 }
+
 .container input#city {
   width: 176px;
 }
+
 .container input#zip-code {
   width: 176px;
 }
+
 .container input:focus {
   border: 0.25px solid rgb(45, 85, 160);
 }
+
 .container .submit-order {
   padding: 15px 30px;
   align-items: center;
@@ -94,6 +146,7 @@ body {
   cursor: pointer;
   background-color: rgb(67, 101, 194);
 }
+
 .container .submit-order:hover {
   background-color: rgb(45, 85, 160);
 }
@@ -105,6 +158,7 @@ body {
   padding: 10px;
   box-sizing: border-box;
 }
+
 .card img {
   height: 105px;
   width: 120px;
@@ -124,6 +178,7 @@ body {
   align-items: center;
   flex-wrap: nowrap;
 }
+
 .shoesDisplay button {
   background-color: rgb(67, 101, 194);
   color: white;
@@ -133,18 +188,22 @@ body {
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
+
 .shoesDisplay button:hover {
   background-color: rgb(45, 85, 160);
 }
+
 .shoesDisplay button:active {
   transform: scale(0.9);
   background-color: rgb(35, 75, 140);
 }
+
 .shoesDisplay h2 {
   font-size: 15px;
   margin: 0;
   margin-top: 10px;
 }
+
 .shoesDisplay p {
   margin: 0;
 }
@@ -154,6 +213,7 @@ footer {
   justify-content: center;
   margin: 30px 0;
 }
+
 footer a {
   text-decoration: none;
   margin: 0 10px;
@@ -164,7 +224,8 @@ header {
   justify-content: space-around;
   align-items: center;
 }
+
 header a {
   text-decoration: none;
   margin: 0 10px;
-}/*# sourceMappingURL=main.css.map */
+}

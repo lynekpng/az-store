@@ -11,9 +11,10 @@
 </style>
     <title>AZ-Store</title>
     <script src="assets/js/script.js" defer></script>
-    <script src="assets/js/scriptCart.js" defer></script>
+    <script src="assets/js/dark_mode.js"></script>
 </head>
 <body>
+
     <header>
         <h3>AZ[store]</h3>
         <nav>
@@ -21,6 +22,7 @@
             <a href="#about">About</a>
             <a href="#product">Product</a>
             <a href="#contact">Contact</a>
+            <button id="toggleBtn">Dark</button>
         </nav>
         <div>
             <a href=""><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
@@ -93,6 +95,7 @@
         <a href="#about">About</a>
         <a href="#product">Product</a>
         <a href="#contact">Contact</a>
+
     </footer>
 </body>
 </html>

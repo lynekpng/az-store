@@ -31,3 +31,4 @@ fetch(jsonUrl)
   .catch(error => {
     console.error('Erreur lors de la récupération du JSON :', error);
   });
+
