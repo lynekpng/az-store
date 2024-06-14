@@ -99,49 +99,56 @@
 </html>
 
 <?php
+session_start();
 
-// session_start();
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "az_store";
 
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
-// $dbname = "az_store";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
 
-//     if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        if ($conn->connect_error) {
+            die("La connexion a échoué: " . $conn->connect_error);
+        }
 
-//         $conn = new mysqli($servername, $username, $password, $dbname);
-//         if ($conn->connect_error) {
-//             die("La connexion a échoué: " . $conn->connect_error);
-//         }
+        $stmt = $conn->prepare("INSERT INTO commandes (order_number, product_name, quantity, customer_name, price) VALUES (?, ?, ?, ?, ?)");
 
 
-//         foreach ($_SESSION['cart'] as $product) {
-//             $product_name = $product['product'];
-//             $quantity = $product['quantity'];
-//             $customer_name = $product['customer_name'];
-//             $price = $product['price'];
+        if ($stmt === false) {
+            die("Erreur de préparation de la requête: " . $conn->error);
+        }
 
-//             $order_number = uniqid();
+        foreach ($_SESSION['cart'] as $product) {
+            $order_number = uniqid();
+            $product_name = $product['product'];
+            $quantity = $product['quantity'];
+            $customer_name = $_POST['full-name'];
+            $price = $product['price'];
 
-//             $sql = "INSERT INTO commandes (order_number, product, quantity, customer_name) 
-//                     VALUES ('$order_number', '$product_name', '$quantity', '$customer_name')";
 
-//             if ($conn->query($sql) === TRUE) {
-//                 echo "Nouvelle commande enregistrée avec succès<br>";
-//                 header("Location: confirmation.php");
-//                 exit;
-//             } else {
-//                 echo "Erreur: " . $sql . "<br>" . $conn->error . "<br>";
-//             }
-//         }
-//         $conn->close();
+            $stmt->bind_param("ssiss", $order_number, $product_name, $quantity, $customer_name, $price);
+            $stmt->execute();
 
-//         unset($_SESSION['cart']);
-//     } else {
-//         echo "Le panier est vide";
-//     }
-// }
+            if ($stmt->affected_rows <= 0) {
+                echo "Erreur lors de l'insertion du produit " . $product_name . "<br>";
+            }
+        }
+        $stmt->close();
+
+        $conn->close();
+
+
+        unset($_SESSION['cart']);
+
+        header("Location: checkout.php");
+        exit;
+    } else {
+        echo "Le panier est vide";
+    }
+}
 
 ?>

@@ -62,7 +62,6 @@
                         Order</button>
                 </form>
 
-                <!-- La div pour la notification toast -->
                 <div id="toastBox"></div>
 
             </div>
