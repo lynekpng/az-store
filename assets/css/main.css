@@ -2,30 +2,42 @@
 
 /* Styles pour le mode clair (par défaut) */
 body {
-  background-color: #fff;
+  background-color: rgb(35, 75, 140);
   color: #000;
   transition: background-color 0.5s, color 0.5s;
 }
 
-header, main, footer {
+/* header, main, footer {
   padding: 20px;
   text-align: center;
-}
+} */
 
-/* Styles pour le bouton */
+/* Styles pour le bouton de bascule */
 nav button#toggleBtn {
-  background-color: #000;
-  color: #fff;
+  background-color: transparent; /* Fond transparent */
   border: none;
-  padding: 10px 20px;
   cursor: pointer;
-  margin-left: 10px; /* Ajoute un espace entre les liens et le bouton */
 }
 
-/* Styles pour le mode sombre */
-.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
+/* Styles pour les icônes */
+nav button#toggleBtn i {
+  font-size: 20px; /* Taille de l'icône */
+}
+
+.dark-mode nav button#toggleBtn .fa-sun {
+  display: none; /* Cacher l'icône de soleil en mode sombre */
+}
+
+/* Afficher l'icône de lune en mode sombre */
+.dark-mode nav button#toggleBtn .fa-moon {
+  display: inline-block;
+  color: #f1c40f; /* Couleur de l'icône de lune */
+}
+
+/* Afficher l'icône de soleil en mode clair */
+.light-mode nav button#toggleBtn .fa-sun {
+  display: inline-block;
+  color: #f39c12; /* Couleur de l'icône de soleil */
 }
 
 .dark-mode nav a,
@@ -39,14 +51,6 @@ nav button#toggleBtn {
 
 .dark-mode .mot_bleu {
   color: #03a9f4;
-}
-
-.dark-mode button#toggleBtn {
-  background-color: #03a9f4;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
 }
 
 /* Autres styles */
@@ -196,16 +200,6 @@ nav button#toggleBtn {
 .shoesDisplay button:active {
   transform: scale(0.9);
   background-color: rgb(35, 75, 140);
-}
-
-.shoesDisplay h2 {
-  font-size: 15px;
-  margin: 0;
-  margin-top: 10px;
-}
-
-.shoesDisplay p {
-  margin: 0;
 }
 
 footer {
