@@ -38,7 +38,7 @@
         </div>
     </div>
 
-    <script src="/assets/js/shopping_cart.js"></script>
+    <script src="../js/shopping_cart.js"></script>
 </body>
 
 </html>

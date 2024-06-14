@@ -1,26 +1,8 @@
-body {
+* {
   background-color: rgb(31, 34, 46);
-  /* background-image: url('/assets/img/NIKE2.png');
-  background-size: 60%; /* Ajuste la taille de l'image pour qu'elle soit contenue dans l'arrière-plan */
-  /* background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
-  /* background-position: top right;   */
   color: #fff;
 }
 
-
-.nike{
-  font-family: "Bungee Outline", sans-serif;
-  font-size: 200px;
-  font-weight: 400;
-  font-style: normal;
-  position: absolute; /* Permet de positionner .content n'importe où */
-  top: -120px; /* Aligne le contenu en haut */
-  right: 120;
-  /* left: 120; Aligne le contenu à gauche */
-  width: 100%; /* Assure que le contenu prend toute la largeur */
-  z-index: -1; /* Place le contenu derrière l'image de fond */
-  padding: 20px;
-}
 .slogan {
   display: flex;
   align-items: center;
@@ -147,6 +129,32 @@ body {
 }
 .shoesDisplay p {
   margin: 0;
+}
+
+#toastBox {
+  position: fixed;
+  bottom: 400px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(57, 245, 19);
+  width: 300px;
+  height: 40px;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  color: #fff;
+  text-align: center;
+}
+#toastBox #toastBoxP {
+  background-color: rgb(57, 245, 19);
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 footer {

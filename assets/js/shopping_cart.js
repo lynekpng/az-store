@@ -57,6 +57,9 @@ function getTotal() {
     cartTotal += cartItem.price * cartItem.quantity;
     totalItem += cartItem.quantity;
   });
+
+
   document.querySelector(".noOfItems").innerHTML = `${totalItem} items`;
   document.querySelector(".total").innerHTML = `${cartTotal.toFixed(2)} €`;
 }
+
