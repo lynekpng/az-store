@@ -34,11 +34,11 @@
                 <h4>Total</h4>
                 <p class="total">$0</p>
             </div>
-            <a href="checkout.php">PROCEED TO CHECKOUT</a>
+            <button><a href="checkout.php">PROCEED TO CHECKOUT</a></button>
         </div>
     </div>
 
-    <script src="/assets/js/shopping cart.js"></script>
+    <script defer src="/assets/js/shopping_cart.js"></script>
 </body>
 
 </html>
