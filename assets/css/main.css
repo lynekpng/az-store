@@ -1,1 +1,233 @@
-/*# sourceMappingURL=main.css.map */
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  background: linear-gradient( #151e30,#111827, #000);
+  color: #fff;
+  font-family: "montserrat", sans-serif;
+
+}
+.store-button {
+  background: linear-gradient(to right, #397DEE 0%, #1f3d8f 100%);
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 5%;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.slogan img {
+  width: 500px;
+}
+main {
+margin-top: 50px;
+}
+.testimonies {
+font-weight: 200;
+}
+.mot_bleu {
+color: #2563eb;
+}
+
+.horizontal-lign {
+opacity: 10%;
+border-style: #4a4a4a;
+z-index: -1;
+}
+
+.nike{
+  font-family: "Bungee Outline", sans-serif;
+  color: grey;
+  opacity: 20%;
+  font-size: 230px;
+  font-weight: 200;
+  font-style: normal;
+  position: absolute; 
+  top: -120px; 
+  right: 120;
+  z-index: -1; 
+  padding: 20px;
+}
+.card {
+  box-shadow: 0px 0px 50px 50px rgba(0,0,0,0.15);
+}
+
+.banner {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: -200px;
+}
+.banner img {
+  width: 500px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about img {
+  width: 300px;
+  margin-top: 50px;
+}
+.about p {
+  width: 600px;
+  text-align: center;
+}
+
+.people {
+  display: flex;
+  margin: 30px 0;
+}
+.people section {
+  flex-basis: 30%;
+  text-align: center;
+  margin: 0 50px;
+}
+.people img {
+  width: 70px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container input {
+  width: 380px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: #323a39;
+  margin: 5px 0;
+}
+.container input#city {
+  width: 176px;
+}
+.container input#zip-code {
+  width: 176px;
+}
+.container input:focus {
+  border: 0.25px solid rgb(45, 85, 160);
+}
+.container .submit-order {
+  padding: 15px 30px;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(to right, #397DEE 0%, #1f3d8f 100%);
+}
+.container .submit-order:hover {
+  background-color: rgb(45, 85, 160);
+}
+
+.card {
+  width: 300px;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.card img {
+height: 200px;
+width: 200px;
+  margin: 0 auto;
+  padding: 0 0px 20px 50px;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.shoesDisplay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.shoesDisplay button {
+  background-color: rgb(67, 101, 194);
+  color: white;
+  padding: 10px;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.shoesDisplay button:hover {
+  background-color: rgb(45, 85, 160);
+}
+.shoesDisplay button:active {
+  transform: scale(0.9);
+  background-color: rgb(35, 75, 140);
+}
+.shoesDisplay h2 {
+  font-size: 15px;
+  margin: 0;
+  margin-top: 10px;
+}
+.shoesDisplay p {
+  margin: 0;
+}
+
+#toastBox {
+  position: fixed;
+  bottom: 400px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(57, 245, 19);
+  width: 300px;
+  height: 40px;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  color: #fff;
+  text-align: center;
+}
+#toastBox #toastBoxP {
+  background-color: rgb(57, 245, 19);
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+footer a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+header {
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  margin: 0 10px;
+}/*# sourceMappingURL=main.css.map */

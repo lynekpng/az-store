@@ -1,0 +1,164 @@
+*{
+    background-color: rgb(31, 34, 46);
+    color: #fff;
+}
+.slogan{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    img{
+        width: 400px;
+    }
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 300px;
+    }
+    p{
+        width: 600px;
+        text-align: center;
+    }
+}
+.people{
+    display: flex;
+    margin: 30px 0;
+    section{
+        flex-basis: 30%;
+        text-align: center;
+        margin: 0 50px;
+    }
+    img {
+        width: 70px;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+.container{
+    // width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input{
+        width: 380px;
+        height: 40px;
+        border: none;
+        outline: none;
+        padding-left: 20px;
+        font-weight: 500;
+        border-radius: 8px;
+        background-color: #323a39;
+        margin: 5px 0;
+        &#city{
+            width: 176px;
+        }
+        &#zip-code{
+            width: 176px;
+        }
+        &:focus{
+            border: 0.25px solid rgb(45, 85, 160);
+        }
+    }
+    .submit-order{
+        padding: 15px 30px;
+        align-items: center;
+        font-size: 16px;
+        color: #fff;
+        gap: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: rgb(67, 101, 194);
+        &:hover{
+            background-color: rgb(45, 85, 160); 
+        }
+    }
+}
+
+
+.card {
+    width: 200px; 
+    margin: 10px;
+    border-radius: 5px; 
+    padding: 10px;
+    box-sizing: border-box; 
+
+    img{
+        height: 105px;
+        width: 120px;
+        margin: 0 auto;
+        padding: 0 0px 20px 50px;
+    }
+  }
+  
+  .articles {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+  }
+  .shoesDisplay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; 
+
+    button {
+        background-color: rgb(67, 101, 194);
+        color: white;
+        padding: 10px;
+        border: 0;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: transform 0.2s ease, background-color 0.2s ease;
+
+        &:hover{
+            background-color: rgb(45, 85, 160); 
+        }
+        &:active{
+            transform: scale(0.9); 
+            background-color: rgb(35, 75, 140); 
+        }
+      }
+    h2{
+        font-size: 15px;
+        margin: 0;
+        margin-top: 10px;
+    }
+    p{
+        margin: 0;
+    }
+  }
+  
+
+  #toastBox{
+    position: fixed;
+    bottom: 400px;
+    right: 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(57, 245, 19); 
+    width: 300px;
+    height: 40px; 
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    color: #fff;
+    text-align: center; 
+
+    #toastBoxP{
+        background-color:rgb(57, 245, 19); 
+        margin: 0 auto;
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+  }
+  
+  
